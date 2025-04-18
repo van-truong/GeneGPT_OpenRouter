@@ -11,6 +11,6 @@ python main.py \
   --input data/geneturing.json \
   --model openai/gpt-4o \
   --mask 111111
-  '''
+'''
 
 You can specify any OpenRouter model with the --model flag. If none is specified, the script defaults to openai/gpt-4o
