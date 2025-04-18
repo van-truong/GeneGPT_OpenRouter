@@ -13,4 +13,4 @@ python main.py \
   --mask 111111
 ```
 
-You can specify any OpenRouter model with the --model flag. If none is specified, the script defaults to openai/gpt-4o
+You can specify any OpenRouter model with the --model flag. If none is specified, the script defaults to openai/gpt-4o. Check out the available models here: https://openrouter.ai/
