@@ -5,6 +5,7 @@ This directory contains an OpenRouter adaption of the code for GeneGPT. Please g
 # Instructions
 
 Clone the GeneGPT_OpenRouter repo to our computer. Change into the directory. 
+
 ```
 python main.py \
   --input data/geneturing.json \
