@@ -14,3 +14,6 @@ python main.py \
 ```
 
 You can specify any OpenRouter model with the --model flag. If none is specified, the script defaults to openai/gpt-4o. Check out the available models here: https://openrouter.ai/
+
+# To-dos
+* Update the evaluate.py script to automatially handle the new output structure
