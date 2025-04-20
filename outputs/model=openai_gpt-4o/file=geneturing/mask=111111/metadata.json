@@ -1,0 +1,22 @@
+{
+  "input_file": "data/geneturing.json",
+  "model": "openai/gpt-4o",
+  "mask": "111111",
+  "started_at": "2025-04-18T22:50:37.632660",
+  "mask_legend": {
+    "0": "Eutils instructions",
+    "1": "BLAST instructions",
+    "2": "Gene alias example",
+    "3": "SNP-gene example",
+    "4": "Gene-disease example",
+    "5": "BLAST alignment example"
+  },
+  "mask_translation": {
+    "Eutils instructions": true,
+    "BLAST instructions": true,
+    "Gene alias example": true,
+    "SNP-gene example": true,
+    "Gene-disease example": true,
+    "BLAST alignment example": true
+  }
+}
