@@ -4,7 +4,9 @@ This directory contains an OpenRouter adaption of the code for GeneGPT. Please g
 
 # Instructions
 
-Clone the GeneGPT_OpenRouter repo to our computer. Change into the directory. 
+Clone the GeneGPT_OpenRouter repo to your computer. Change into the directory. Make sure your environment has all the neccessary requirements, including storing your OPENROUTER_API_KEY in your system variables. 
+
+Then when ready, run this command from your terminal:
 
 ```
 python main.py \
