@@ -11,7 +11,6 @@ querying multiple tasks from an input JSON file. Results are saved in structured
 directories for further analysism with informative logging in metadata files.
 """
 
-import os
 import re
 import json
 import time
@@ -27,8 +26,8 @@ API_RATE_LIMIT_DELAY = 0.5  # Default delay between OpenRouter API calls (in sec
 # NOTE: Adjust based on OpenRouter rate limits:
 # Free model: ~20 req/min, Paid: 1 req/sec per credit (e.g. 10 credits = 10 req/sec)
 # See: https://openrouter.ai/docs#rate-limits
-OPENROUTER_URL = "https://openrouter.ai/api/v1/completions"
 CUTOFF_LENGTH = 18000  # Maximum character length for prompts
+OPENROUTER_URL = "https://openrouter.ai/api/v1/completions"
 
 def fetch_url(url, delay=1):
     """
@@ -66,7 +65,12 @@ def query_openrouter(prompt, model="openai/gpt-4o", max_tokens=512, temperature=
     }
     payload = {
         "model": model,
-        "prompt": prompt,
+        "messages": [
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ],
         "max_tokens": max_tokens,
         "temperature": temperature,
         "stop": ['->', '\n\nQuestion'],
