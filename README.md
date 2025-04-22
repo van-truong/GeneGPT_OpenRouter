@@ -17,5 +17,10 @@ python main.py \
 
 You can specify any OpenRouter model with the --model flag. If none is specified, the script defaults to openai/gpt-4o. Check out the available models here: https://openrouter.ai/
 
+How OpenRouter works:
+* If the model parameter is omitted, the user or payer’s default is used. Otherwise, remember to select a value for model from the supported models or API, and include the organization prefix. OpenRouter will select the least expensive and best GPUs available to serve the request, and fall back to other providers or GPUs if it receives a 5xx response code or if you are rate-limited.
+* https://openrouter.ai/docs/api-reference/overview 
+
+
 # To-dos
 * Update the evaluate.py script to automatially handle the new output structure
